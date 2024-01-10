@@ -1,6 +1,5 @@
 ##Overview
-A custom full-stack web application that allows different users to better monitor and manage their income and expenses. Users are able to log each of their expenses and income with details
-such as amount, category, and date. The application offers a dashboard to visualize spending patterns in real-time. Expenses/income are also categorized, making it easier to track
+- A custom full-stack web application that allows different users to monitor and manage their income and expenses. Users are able to log each of their expenses and income with details such as amount, category, and date. The application offers a dashboard to visualize spending patterns in real-time. Expenses/income are also categorized, making it easier to track
 and analyze spending habits. The UI is fully responsive, providing a seamless experience across different devices. Built with the MERN stack.
 
 ##Installation
