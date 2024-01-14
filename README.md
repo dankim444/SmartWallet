@@ -11,7 +11,7 @@ and analyze spending habits. The UI is fully responsive, providing a seamless ex
 1. Create a .env file in the root directory of your project in server folder.
 2. Add the following environment variables to the .env file:
 - PORT=8000
-- MONGO_URI= <your-mongo-uri>
+- MONGO_URI= <your-mongo-uri> 
 - CLIENT_URL=http://localhost:3000
 - JWT_SECRET= <your-jwt-secret>
 
