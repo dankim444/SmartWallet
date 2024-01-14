@@ -16,7 +16,7 @@ and analyze spending habits. The UI is fully responsive, providing a seamless ex
 - JWT_SECRET= <your-jwt-secret>
 
 ##Development
-- To start the development and run the app locally, type 'npm run dev' via terminal
+- To start the development and run the app locally, type 'npm run start' via terminal
 
 ##Contribution
 - To add your own features and fixes to this application, follow these steps:
