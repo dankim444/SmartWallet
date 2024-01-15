@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
 import { useGlobalContext } from '../context/globalContext'
+import Button from './Button'
+import { plus } from '../utils/icons'
 
 const Form = () => {
   
-    const {addIncome} = useGlobalContext()
+    const {addIncome, getIncomes} = useGlobalContext()
 
     const [inputState, setInputState] = useState({
         title: '',
@@ -25,6 +27,7 @@ const Form = () => {
     const handleSubmit = e => {
         e.preventDefault()
         addIncome(inputState)
+        getIncomes() // update incomes list after adding new income
     }
     
   return (
@@ -80,7 +83,14 @@ const Form = () => {
                     onChange={handleInput('description')}/>
         </div>
         <div className="submit-btn">
-            <button>Add Income</button>
+            <Button
+                name={'Add Income'}
+                icon={plus}
+                bPad={'.8rem 1.6rem'}
+                bRad={'30px'}
+                bg={'var(--color-accent)'}
+                color='#fff'
+            />
         </div>
     </FormStyled>
   )
@@ -118,6 +128,14 @@ const FormStyled = styled.form`
             color: rgba(34,34,96,1);
             &:focus, &:active{
                 color: rgba(34,34,96,1);
+            }
+        }
+    }
+    .submit-btn{
+        button{
+            box-shadow: 0px 1px 15px rgba(0,0,0,0.06)
+            &:hover{
+                background: var(--color-green) !important;
             }
         }
     }
