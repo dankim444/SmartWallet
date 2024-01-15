@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import avatar from '../../img/avatar.png'
-import { menuItems } from '../../utils/menuItems'
-import { signout } from '../../utils/icons'
+import avatar from '../img/avatar.png'
+import { menuItems } from '../utils/menuItems'
+import { signout } from '../utils/icons'
 
 const Navigation = ({active, setActive}) => {
 
@@ -96,9 +96,9 @@ const NavStyled = styled.nav`
   }
 
   .active{
-    color: rgba(34,34,96,1);
+    color: rgba(34,34,96,1) !important;
     i{
-      color: rgba(34,34,96,1);
+      color: rgba(34,34,96,1) !important;
     }
     &::before{
       content: "";

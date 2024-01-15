@@ -1,5 +1,6 @@
 const ExpenseSchema = require("../models/incomeModel")
 
+// expense endpoints
 exports.addExpense = async (req, res) => {
     const {title, amount, category, description, date} = req.body
 
